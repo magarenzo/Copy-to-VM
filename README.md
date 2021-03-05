@@ -11,8 +11,8 @@ Found this nifty PowerShell cmdlet `Copy-VMFile` to copy a file to a virtual mac
 | **Parameters** | **Description** |
 | -------------- | --------------- |
 | `-VirtualMachineName` | Name of the virtual machine we are copying the file to |
-| `-SourcePath` | Absolute path to the source file we are copying from the host machine |
-| `-DestinationPath` | Absolute path of the destination path we are copying to on the VM |
+| `-SourcePath` | Absolute path to the source file we are copying from the host machine, including the file name  |
+| `-DestinationPath` | Absolute path of the destination path we are copying to on the VM, including the file name |
 
 ## Running the Script
 
