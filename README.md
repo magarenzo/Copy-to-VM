@@ -1,18 +1,20 @@
-# Copy To VM
+# Copy to VM
 
 Copy files from host Windows machine to local virtual machine
 
 ## Overview
 
-TBD
+Found this nifty PowerShell cmdlet `Copy-VMFile` to copy a file to a virtual machine, so I put it inside this script with parameters and simple logging for ease of use.
 
-### Script Parameters
+## Script Parameters
 
 | **Parameters** | **Description** |
 | -------------- | --------------- |
-| `-TBD` | TBD |
+| `-VirtualMachineName` | Name of the virtual machine we are copying the file to |
+| `-SourcePath` | Absolute path to the source file we are copying from the host machine |
+| `-DestinationPath` | Absolute path of the destination path we are copying to on the VM |
 
-### Running the Script
+## Running the Script
 
 1. Open a PowerShell session as Administrator
 
@@ -22,12 +24,20 @@ TBD
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
-3. For example, TBD:
+3. For example:
 
 ```powershell
-.\Copy-To-VM.ps1 `
-  -TBD TBD `
+.\Copy-to-VM.ps1 `
+  -VirtualMachineName "Example-VM-Name" `
+  -SourcePath "C:\Example-File.txt" `
+  -DestinationPath "C:\Example-Directory\" `
 ```
+
+## Dependencies
+
+* [Hyper-V Module](https://docs.microsoft.com/en-us/powershell/module/hyper-v/?view=win10-ps)
+
+* [Copy-VMFile](https://docs.microsoft.com/en-us/powershell/module/hyper-v/copy-vmfile?view=win10-ps)
 
 ## Owner
 
