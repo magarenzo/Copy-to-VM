@@ -30,7 +30,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\Copy-to-VM.ps1 `
   -VirtualMachineName "Example-VM-Name" `
   -SourcePath "C:\Example-File.txt" `
-  -DestinationPath "C:\Example-Directory\" `
+  -DestinationPath "D:\Example-Directory\Example-File.txt" `
 ```
 
 ## Dependencies
