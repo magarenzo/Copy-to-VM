@@ -37,7 +37,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 * [Hyper-V Module](https://docs.microsoft.com/en-us/powershell/module/hyper-v/?view=win10-ps)
 
-* [Copy-VMFile](https://docs.microsoft.com/en-us/powershell/module/hyper-v/copy-vmfile?view=win10-ps)
+  * [Copy-VMFile](https://docs.microsoft.com/en-us/powershell/module/hyper-v/copy-vmfile?view=win10-ps)
 
 ## Owner
 
