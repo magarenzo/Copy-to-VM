@@ -41,4 +41,4 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 ## Owner
 
-[Michael A. Agarenzo](https://magarenzo.com)
+[Michael A.](https://linkedin.com/in/magarenzo)
