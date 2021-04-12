@@ -2,17 +2,17 @@
 
 Copy files from host Windows machine to local virtual machine
 
-## Overview
+## Description
 
 Found this nifty PowerShell cmdlet `Copy-VMFile` to copy a file to a virtual machine, so I put it inside this script with parameters and simple logging for ease of use.
 
-## Script Parameters
+## Parameters
 
-| **Parameters** | **Description** |
+| **Parameter** | **Description** |
 | -------------- | --------------- |
-| `-VirtualMachineName` | Name of the virtual machine we are copying the file to |
-| `-SourcePath` | Absolute path to the source file we are copying from the host machine, including the file name  |
-| `-DestinationPath` | Absolute path of the destination path we are copying to on the VM, including the file name |
+| VirtualMachineName | Name of the virtual machine we are copying the file to |
+| PathSource | Full path to the source file we are copying from the host machine, including the file name.  |
+| PathDestination | Full path of the destination we are copying to on the VM, including the new file name. |
 
 ## Running the Script
 
@@ -24,7 +24,7 @@ Found this nifty PowerShell cmdlet `Copy-VMFile` to copy a file to a virtual mac
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
-3. For example:
+3. Run the script! For example:
 
 ```powershell
 .\Copy-to-VM.ps1 `
